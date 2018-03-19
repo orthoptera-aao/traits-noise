@@ -6,7 +6,7 @@ args = commandArgs(trailingOnly=TRUE)
 recording_id <- args[1]
 filename <- args[2];
 
-foder <- "modules/traits-noise/noise/"
+folder <- "modules/traits-noise/noise/"
 
 wave <- readWave(paste0(filename));
 wave <- normalize(wave);
