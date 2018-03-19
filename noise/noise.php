@@ -49,7 +49,7 @@ function noise_prepare() {
         $system["analyses"]["noise"][] = substr($line, $start + 1);
       }
     }
-  core_log("info", "noise", count($system["analyses"]["noise"])." noisegram image files found.");
+  core_log("info", "noise", count($system["analyses"]["noise"])." noise analysis files found.");
   }
   return(array());
 }
