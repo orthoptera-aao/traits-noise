@@ -74,17 +74,17 @@ function noise_analyse($recording) {
       $return[$recording["id"].".hist.png"] = array(
         "file name" => $recording["id"].".hist.png",
         "local path" => "modules/traits-noise/noise/",
-        "save path" => NULL
+        "save path" => "noise/".$system["modules"]["noise"]["git_hash"]."/"
       );
       $return[$recording["id"].".spectro.png"] = array(
         "file name" => $recording["id"].".spectro.png",
         "local path" => "modules/traits-noise/noise/",
-        "save path" => NULL
+        "save path" => "noise/".$system["modules"]["noise"]["git_hash"]."/"
       );
       $return[$recording["id"].".csv"] = array(
         "file name" => $recording["id"].".csv",
         "local path" => "modules/traits-noise/noise/",
-        "save path" => NULL
+        "save path" => "noise/".$system["modules"]["noise"]["git_hash"]."/"
       );
     } else {
       core_log("warning", "noise", "Recording ".$recording["id"].": Issue analysing noise ".serialize($output));
